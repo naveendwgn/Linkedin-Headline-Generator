@@ -10,7 +10,7 @@ export default function Home() {
 
   async function generateHeadline() {
 
-    const API_KEY = process.env.OPENAI_API_KEY;
+    const API_KEY = process.env.NEXT_PUBLIC_OPENAI_API_KEY;
 
     const APIBody = {
       "model": "gpt-3.5-turbo",
