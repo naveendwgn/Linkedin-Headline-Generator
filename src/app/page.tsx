@@ -2,6 +2,7 @@
 import React, { useState} from "react";
 import { FaGithub } from 'react-icons/fa';
 import { HiFire } from 'react-icons/hi';
+import { BsFillArrowDownCircleFill } from 'react-icons/bs';
 
 export default function Home() {
 
@@ -48,7 +49,7 @@ export default function Home() {
   return (
     <>
       <nav className="flex items-center justify-between flex-wrap bg-black p-6">
-        <a href="/" className="flex items-center flex-shrink-0 text-white mr-6">
+        <a href="https://github.com/naveendwgn/Linkedin-Headline-Generator" className="flex items-center flex-shrink-0 text-white mr-6">
           <FaGithub className="fill-current h-8 w-8 mr-2" />
         </a>
         <a href="https://naveendwgn.github.io/" className="flex items-center flex-shrink-0 text-white mr-6">
@@ -56,18 +57,24 @@ export default function Home() {
         </a>
       </nav>
 
-      <main className="flex min-h-screen flex-col items-center p-16">
-        <h1 className="text-5xl font-bold text-center">
+      <main className="flex min-h-screen flex-col items-center p-24">
+        <h1 className="sm:text-4xl max-w-[708px] text-5xl font-bold text-center">
           Generate your Linkedin Headline <br/> with ease using <br/>
-          GPT-3.5
+          AI
         </h1>
-        <input
-          type="text"
+        <div className="flex items-center justify-center mt-6 sm:mt-12 md:mt-16">
+          <BsFillArrowDownCircleFill className="fill-current h-6 w-6 sm:h-8 sm:w-8 mr-4" />
+          <p className="text-xs sm:text-sm md:text-base font-semibold text-center">
+            Write a short description about yourself
+          </p>
+        </div>
+        <textarea
           onChange={(e) => setDescription(e.target.value)}
-          className="mt-16 px-3 py-3 rounded-lg mb-4 bg-[#fafafa] text-black w-full max-w-lg"
+          className="mt-6 px-2 py-3 rounded-lg mb-4 bg-[#fafafa] text-black w-full max-w-lg"
           required
-          placeholder="e.g. I am B.tech CSE undergrad and an intern at Google"
-        />
+          placeholder="e.g. I am B.tech CSE undergrad and an intern at Google, interested in web development and 5 star coder at codechef."
+        >
+        </textarea>
         <button 
             onClick={generateHeadline}
             className='bg-[#5090da] text-[#ffffff] px-5 py-2 rounded-lg mt-6 hover:bg-[#67b6f2]'
@@ -82,9 +89,12 @@ export default function Home() {
               null
             }
       </main>
-      <footer className="flex items-center justify-center bg-black p-6">
+      <footer className="flex flex-col items-center justify-center bg-black p-6">
         <p className="text-white text-center">
-          Made with ❤️ by <a href="https://naveendwgn.github.io/" className="text-[#5090da]">Naveen Dewangan</a>
+          Made with ❤️ by <a href="https://github.com/naveendwgn" className="text-[#5090da]">Naveen Dewangan</a>
+        </p>
+        <p className="text-white text-center">
+          Powered by GPT-3.5 Turbo from <a href="https://openai.com/" className="text-[#5090da]">OpenAI</a>
         </p>
       </footer>
     </>
