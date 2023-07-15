@@ -1,4 +1,4 @@
-## Linkedin Headline Generator
+## ProHeadliner - Linkedin Headline Generator
 
 This is a simple tool to generate your next Linkedin headline. It uses GPT-3.5 Turbo to generate the headline depending upon the short description provided by the user.
 
