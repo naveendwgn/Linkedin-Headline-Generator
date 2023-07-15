@@ -57,10 +57,12 @@ export default function Home() {
         </a>
       </nav>
 
-      <main className="flex min-h-screen flex-col items-center p-24">
-        <h1 className="sm:text-5xl text-4xl font-sans font-bold tracking-wide text-center">
-          Generate your Linkedin Headline <br/> with ease using <br/>
-          AI
+      <main className="flex min-h-screen flex-col items-center p-16">
+        <h1 className="sm:text-8xl text-5xl font-sans font-bold tracking-wide text-center">
+          ProHeadlin<span className="text-[#ff2386]">e</span>
+        </h1>
+        <h1 className="mt-6 sm:text-xl text-2xl font-bold tracking-wide text-center">
+        Generate your LinkedIn headlines in seconds <br/> using AI
         </h1>
         <div className="flex items-center justify-center mt-6 sm:mt-12 md:mt-16">
           <BsFillArrowDownCircleFill className="fill-current h-6 w-6 sm: sm:w-8 mr-2" />
@@ -77,8 +79,8 @@ export default function Home() {
         </textarea>
         <button 
             onClick={generateHeadline}
-            className='bg-[#5090da] text-[#ffffff] px-5 py-2 rounded-lg mt-6 hover:bg-[#67b6f2]'
-            >Generate
+            className='bg-[#ff2386] text-[#ffffff] px-5 py-2 rounded-lg mt-6 hover:bg-[#ff4d9d]'
+            >Generate ↵
             </button>
             {
               headline !== '' ?
@@ -91,10 +93,10 @@ export default function Home() {
       </main>
       <footer className="flex flex-col items-center justify-center bg-black p-6">
         <p className="text-white text-center">
-          Made with ❤️ by <a href="https://github.com/naveendwgn" className="text-[#5090da]">Naveen Dewangan</a>
+          Made with ❤️ by <a href="https://github.com/naveendwgn" className="text-[#ff2386]">Naveen Dewangan</a>
         </p>
         <p className="text-white text-center">
-          Powered by GPT-3.5 Turbo from <a href="https://openai.com/" className="text-[#5090da]">OpenAI</a>
+          Powered by GPT-3.5 Turbo from <a href="https://openai.com/" className="text-[#ff2386]">OpenAI</a>
         </p>
       </footer>
     </>
