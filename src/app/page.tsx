@@ -62,7 +62,7 @@ export default function Home() {
           ProHeadlin<span className="text-[#ff2386]">e</span>
         </h1>
         <h1 className="mt-6 sm:text-xl text-2xl font-bold tracking-wide text-center">
-        Generate your LinkedIn headlines in seconds <br/> using AI
+        Generate your Linkedin headlines in seconds <br/> using AI
         </h1>
         <div className="flex items-center justify-center mt-6 sm:mt-12 md:mt-16">
           <BsFillArrowDownCircleFill className="fill-current h-6 w-6 sm: sm:w-8 mr-2" />
