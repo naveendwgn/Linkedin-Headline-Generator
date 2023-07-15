@@ -58,12 +58,12 @@ export default function Home() {
       </nav>
 
       <main className="flex min-h-screen flex-col items-center p-24">
-        <h1 className="sm:text-4xl max-w-[708px] text-5xl font-bold text-center">
+        <h1 className="sm:text-5xl text-4xl font-sans font-bold tracking-wide text-center">
           Generate your Linkedin Headline <br/> with ease using <br/>
           AI
         </h1>
         <div className="flex items-center justify-center mt-6 sm:mt-12 md:mt-16">
-          <BsFillArrowDownCircleFill className="fill-current h-6 w-6 sm:h-8 sm:w-8 mr-4" />
+          <BsFillArrowDownCircleFill className="fill-current h-6 w-6 sm: sm:w-8 mr-2" />
           <p className="text-xs sm:text-sm md:text-base font-semibold text-center">
             Write a short description about yourself
           </p>
